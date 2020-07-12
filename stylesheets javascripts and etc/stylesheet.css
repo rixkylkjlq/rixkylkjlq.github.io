@@ -41,6 +41,8 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 /*PADDING is the Third space comes before the border and after the content*/
 /*CONTENT is the last inner space comes before the padding*/
 
+
+
 /*Href links does not underline when hover */a:hover {
 	text-decoration: none;
 }
@@ -50,8 +52,13 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 }	  
   /*Body*/body {
     font-family: 'magraregular';
-	  font-size: 20px;
+	font-size: 20px;
     color: black;
+	 width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+	overflow-x: hidden;
   }
   /*Main Header*/h2 {
     font-size: 45px;
@@ -90,7 +97,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
   }
   /*Big Logo*/.logo {
     color: #373737;
-	  padding: 100px ;
+	padding: 100px ;
   }
   /*Slideshow Arrows*/.carousel-control.right, .carousel-control.left {
     background-image: none;
@@ -140,9 +147,6 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
     padding: 20px;
     border-bottom: 1px solid transparent;
   }
-/*Portfolio Panels Heading when hover*/ .panel-heading:hover {
-	
-}
  /*Showcase Thumbnail*/.thumbnail {
     padding: 0 0 15px 0;
     border: none;
@@ -334,6 +338,8 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 	}
 }
 /*Bar Protools*/ li.protools:after{
+	content:attr(perwhite);
+	color:#fff;
 	animation-name: protools;
 	background-color: #4F1662;
 }
