@@ -209,12 +209,13 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 	position: relative;
 	list-style: none;
 	margin: 50px 150px 50px 0px;
+	font-size: 25px;
 }
 /*Bar Skills*/ li.barskill{
 	position: relative;
 	list-style: none;
 	margin: 50px 130px 50px 0px;
-	font-size: 13px;
+	font-size: 20px;
 }
 /*Bar Before*/ li.bar:before {
 	content: "";
@@ -228,6 +229,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 }
 /*Bar After*/ li.bar:after {
 	content: attr(per);
+	font-size:20px;
 	position: absolute;
 	padding-left: 10px;
 	top: calc(100% + 10px);
@@ -247,7 +249,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 
 @keyframes animate {
 	to{
-		width: 70%;
+		width: 50%;
 	}
 }
 /*Bar MAYA*/ li.maya:after{
@@ -258,7 +260,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 }
 @keyframes maya {
 	to{
-		width: 60%;
+		width: 55%;
 	}
 }
 
@@ -275,6 +277,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 /*Bar Unity*/ li.unity:after{
 	content:attr(perwhite);
 	color:#fff;
+	font-size:20px;
 	animation-name: unity;
 	background-color: #222C37;
 }
@@ -307,7 +310,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 }
 @keyframes wingware{
 	to{
-		width: 70%;
+		width: 60%;
 	}
 }
 /*Bar After Effects*/ li.aftereffects:after{
@@ -334,18 +337,19 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 }
 @keyframes premierepro{
 	to{
-		width: 75%;
+		width: 70%;
 	}
 }
 /*Bar Protools*/ li.protools:after{
 	content:attr(perwhite);
 	color:#fff;
+	font-size:20px;
 	animation-name: protools;
 	background-color: #4F1662;
 }
 @keyframes protools{
 	to{
-		width: 70%;
+		width: 60%;
 	}
 }
 /*Bar Illustrator*/ li.illustrator:after{
@@ -363,7 +367,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 }
 @keyframes indesign{
 	to{
-		width: 70%;
+		width: 65%;
 	}
 }
 /*Bar Photoshop*/ li.photoshop:after{
@@ -378,6 +382,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 /*Bar Art*/ li.art:after{
 	content:attr(perwhite);
 	color:#fff;
+	font-size:20px;
 	animation-name: art;
 	background-color: #000000;
 }
@@ -389,6 +394,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 /*Bar Photograhy*/ li.photography:after{
 	content:attr(perwhite);
 	color:#fff;
+	font-size:20px;
 	animation-name: photography;
 	background-color: #000000;
 }
@@ -405,12 +411,13 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 }
 @keyframes videography{
 	to{
-		width: 60%;
+		width: 55%;
 	}
 }
 /*Bar Excel*/ li.excel:after{
 	content:attr(perwhite);
 	color:#fff;
+	font-size:20px;
 	animation-name: excel;
 	background-color: #207245;
 }
@@ -422,6 +429,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 /*Bar Powerpoint*/ li.powerpoint:after{
 	content:attr(perwhite);
 	color:#fff;
+	font-size:20px;
 	animation-name: powerpoint;
 	background-color: #D14524;
 }
@@ -433,6 +441,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
 /*Bar Word*/ li.word:after{
 	content:attr(perwhite);
 	color:#fff;
+	font-size:20px;
 	animation-name: word;
 	background-color: #2B569A;
 }
@@ -451,6 +460,10 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
     letter-spacing: 2px;
     border-radius: 0;
     font-family: 'magrabold';
+	width: 100%;
+    margin: 0px;
+    padding: 0px;
+	overflow-x: hidden;
   }
 /*Navigation Bar Brand colour and font*/.navbar-brand{
 	color: #fff !important;
@@ -477,7 +490,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
     color: #6495ED;
   }
 
-   /*Media Screens of Size 768px*/@media screen and (max-width: 768px) {
+   /*Media Screens of Size 768px*/@media screen and (max-width: 800px) {
      /*Small Devices*/.col-sm-4 {
       text-align: center;
       margin: 25px 0;
@@ -487,7 +500,7 @@ url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
       margin-bottom: 35px;
     }
   }
-  /*Media Screens of Size 480px*/@media screen and (max-width: 480px) {
+  /*Media Screens of Size 480px*/@media screen and (max-width: 500px) {
     /*Size of Glyphicons when Media Screen is of Size 480px*/.logo {
       font-size: 150px;
     }
