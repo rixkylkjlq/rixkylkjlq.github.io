@@ -1,0 +1,507 @@
+@font-face {
+    font-family: 'edoregular';
+    src: url('../myfonts/edo-webfont.eot');
+    src: url('../myfonts/edo-webfont.eot?#iefix') format('embedded-opentype'),
+url('../myfonts/edo-webfont.woff2') format('woff2'),
+url('../myfonts/edo-webfont.woff') format('woff'),
+url('../myfonts/edo-webfont.ttf') format('truetype'),
+url('../myfonts/edo-webfont.svg#edoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'magrabold';
+    src: url('../myfonts/Magra-Bold-webfont.eot');
+    src: url('../myfonts/Magra-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+url('../myfonts/Magra-Bold-webfont.woff2') format('woff2'),
+url('../myfonts/Magra-Bold-webfont.woff') format('woff'),
+url('../myfonts/Magra-Bold-webfont.ttf') format('truetype'),
+url('../myfonts/Magra-Bold-webfont.svg#magrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'magraregular';
+    src: url('../myfonts/Magra-Regular-webfont.eot');
+    src: url('../myfonts/Magra-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../myfonts/Magra-Regular-webfont.woff2') format('woff2'),
+url('../myfonts/Magra-Regular-webfont.woff') format('woff'),
+url('../myfonts/Magra-Regular-webfont.ttf') format('truetype'),
+url('../myfonts/Magra-Regular-webfont.svg#magraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*MARGIN is the most outside space comes after the border*/
+/*BORDER is the Second space comes before the margin and after the padding*/
+/*PADDING is the Third space comes before the border and after the content*/
+/*CONTENT is the last inner space comes before the padding*/
+
+
+
+/*Href links does not underline when hover */a:hover {
+	text-decoration: none;
+}
+
+/*Paragraph p remains black*/p {
+	color: black;
+}	  
+  /*Body*/body {
+    font-family: 'magraregular';
+	font-size: 20px;
+    color: black;
+	 width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+	overflow-x: hidden;
+  }
+  /*Main Header*/h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+	font-family: 'edoregular';
+  }
+  /*Sub-Header*/h4 {
+    font-size: 35px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+	font-family: 'magrabold';
+  }  
+  /*Header Body with Jumbo words*/.jumbotron {
+    background-color: #6495ED;
+    color: black;
+    padding: 100px 50px;
+    font-family: 'edoregular';
+  }
+/*About me font size*/ .p {
+	font-size: 30px;
+}
+  /*Padding size of Container*/.container-fluid {
+    padding: 60px 50px;
+  }
+  /*Alternate Containers Background Grey*/.bg-grey {
+    background-color: #CFCFCF;
+  }
+  /*Small Logo*/.logo-small {
+    color: #6495ED;
+    font-size: 50px;
+  }
+  /*Big Logo*/.logo {
+    color: #373737;
+	padding: 100px ;
+  }
+  /*Slideshow Arrows*/.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #6495ED;
+	transition: 0.8s ease;
+	border-radius: (3, 3, 0, 0);
+	opacity: 0;
+	margin-bottom: 165px;
+  }
+/*Slideshow Arrows when hover*/.carousel-control.right:hover, .carousel-control.left:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+}
+/*Slideshow Indicator*/.carousel-indicators {
+	font-size: 20px;
+}
+/*Slideshow Indicator colour*/.carousel-indicators li {
+	border-color: #555555;
+	background-color: #555555;
+	
+  }
+  /*Slideshow Indicator colour when active*/.carousel-indicators li.active {
+    background-color: #6495ED;
+	border-color: #6495ED;
+  }
+  /*Slideshow Item Text*/.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  /*Slideshow Container*/.item span {
+    font-style: normal;
+  }
+  /*Portfolio Panels*/.panel {
+    border: 1px solid #6495ED; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  /*Portfolio Panels Shadow when hover*/.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+  }
+  /*Portfolio Panels Heading*/.panel-heading {
+    color: #fff !important;
+    background-color: #6495ED !important;
+    padding: 20px;
+    border-bottom: 1px solid transparent;
+  }
+ /*Showcase Thumbnail*/.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  /*Showcase Thumbnail img*/.thumbnail img {
+    width: 100%;
+	max-width: 500px;
+    height: 100%;
+	max-height: 700px;
+    margin-bottom: 10px;
+	cursor:pointer; 
+  }
+/*Showcase Thumbnail img before hover*/ .thumbnailbhover{
+	  border: 1px solid #6495ED; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+}
+
+/*Showcase Thumbnail*/.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/*Showcase Thumbnail when hover middle box*/.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor:pointer;
+}
+/*Showcase Thumbnail when hover text*/.text {
+  background-color: #3D3D3D;
+  color: white;
+  font-size: 25px;
+  padding: 15px 30px;
+ cursor:pointer;
+}
+.btn {
+	background
+}
+/*Showcase Thumbnail when hover*/.thumbnailbhover:hover{
+    box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+}
+/*Showcase Thumbnail when hover image opacity*/.thumbnailbhover:hover .image  {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+	opacity: 0.3;
+}
+/*Showcase Thumbnail when hover middle box opacity*/.thumbnailbhover:hover .middle  {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+	opacity: 1;
+}
+/*Bar Title*/ li.bartitle{
+	position: relative;
+	list-style: none;
+	margin: 50px 150px 50px 0px;
+	font-size: 25px;
+}
+/*Bar Skills*/ li.barskill{
+	position: relative;
+	list-style: none;
+	margin: 50px 130px 50px 0px;
+	font-size: 20px;
+}
+/*Bar Before*/ li.bar:before {
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	width:100%;
+	height: 25px;
+	background-color: #AFAFAF;
+	border-radius: 1000px;
+}
+/*Bar After*/ li.bar:after {
+	content: attr(per);
+	font-size:20px;
+	position: absolute;
+	padding-left: 10px;
+	top: calc(100% + 10px);
+	left: 0;
+	width:0;
+	height: 25px;
+	border-radius: 1000px;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	animation-duration: 5s;
+}
+
+/*Bar Animate*/ li.animate:after{
+	animation-name: animate;
+	background-color: #FF401F;
+}
+
+@keyframes animate {
+	to{
+		width: 50%;
+	}
+}
+/*Bar MAYA*/ li.maya:after{
+	animation-name: maya;
+	background-color: #00A9AB;
+	animation-duration: 5s;
+	
+}
+@keyframes maya {
+	to{
+		width: 55%;
+	}
+}
+
+
+/*Bar Dreamweaver*/ li.dreamweaver:after{
+	animation-name: dreamweaver;
+	background-color: #35FA00;
+}
+@keyframes dreamweaver{
+	to{
+		width: 85%;
+	}
+}
+/*Bar Unity*/ li.unity:after{
+	content:attr(perwhite);
+	color:#fff;
+	font-size:20px;
+	animation-name: unity;
+	background-color: #222C37;
+}
+@keyframes unity{
+	to{
+		width: 55%;
+	}
+}
+/*Bar MySql*/ li.mysql:after{
+	animation-name: mysql;
+	background-color: #0593C5;
+}
+@keyframes mysql{
+	to{
+		width: 65%;
+	}
+}
+/*Bar Netbeans*/ li.netbeans:after{
+	animation-name: netbeans;
+	background-color: #3C5B88;
+}
+@keyframes netbeans{
+	to{
+		width: 60%;
+	}
+}
+/*Bar Wingware*/ li.wingware:after{
+	animation-name: wingware;
+	background-color: #876EA9;
+}
+@keyframes wingware{
+	to{
+		width: 60%;
+	}
+}
+/*Bar After Effects*/ li.aftereffects:after{
+	animation-name: aftereffects;
+	background-color: #D8A1FF;
+}
+@keyframes aftereffects{
+	to{
+		width: 75%;
+	}
+}
+/*Bar Lightroom*/ li.lightroom:after{
+	animation-name: lightroom;
+	background-color: #AED3E9;
+}
+@keyframes lightroom{
+	to{
+		width: 40%;
+	}
+}
+/*Bar Premiere Pro*/ li.premierepro:after{
+	animation-name: premierepro;
+	background-color: #E579FF;
+}
+@keyframes premierepro{
+	to{
+		width: 70%;
+	}
+}
+/*Bar Protools*/ li.protools:after{
+	content:attr(perwhite);
+	color:#fff;
+	font-size:20px;
+	animation-name: protools;
+	background-color: #4F1662;
+}
+@keyframes protools{
+	to{
+		width: 60%;
+	}
+}
+/*Bar Illustrator*/ li.illustrator:after{
+	animation-name: illustrator;
+	background-color: #FF7F18;
+}
+@keyframes illustrator{
+	to{
+		width: 80%;
+	}
+}
+/*Bar InDesign*/ li.indesign:after{
+	animation-name: indesign;
+	background-color: #FF408C;
+}
+@keyframes indesign{
+	to{
+		width: 65%;
+	}
+}
+/*Bar Photoshop*/ li.photoshop:after{
+	animation-name: photoshop;
+	background-color: #32C5F1;
+}
+@keyframes photoshop{
+	to{
+		width: 90%;
+	}
+}
+/*Bar Art*/ li.art:after{
+	content:attr(perwhite);
+	color:#fff;
+	font-size:20px;
+	animation-name: art;
+	background-color: #000000;
+}
+@keyframes art{
+	to{
+		width: 95%;
+	}
+}
+/*Bar Photograhy*/ li.photography:after{
+	content:attr(perwhite);
+	color:#fff;
+	font-size:20px;
+	animation-name: photography;
+	background-color: #000000;
+}
+@keyframes photography{
+	to{
+		width: 80%;
+	}
+}
+/*Bar videography*/ li.videography:after{
+	content:attr(perwhite);
+	color:#fff;
+	animation-name: videography;
+	background-color: #000000;
+}
+@keyframes videography{
+	to{
+		width: 55%;
+	}
+}
+/*Bar Excel*/ li.excel:after{
+	content:attr(perwhite);
+	color:#fff;
+	font-size:20px;
+	animation-name: excel;
+	background-color: #207245;
+}
+@keyframes excel{
+	to{
+		width: 55%;
+	}
+}
+/*Bar Powerpoint*/ li.powerpoint:after{
+	content:attr(perwhite);
+	color:#fff;
+	font-size:20px;
+	animation-name: powerpoint;
+	background-color: #D14524;
+}
+@keyframes powerpoint{
+	to{
+		width: 100%;
+	}
+}
+/*Bar Word*/ li.word:after{
+	content:attr(perwhite);
+	color:#fff;
+	font-size:20px;
+	animation-name: word;
+	background-color: #2B569A;
+}
+@keyframes word{
+	to{
+		width: 100%;
+	}
+}
+  /*Navigation Bar*/.navbar {
+    margin-bottom: 0;
+    background-color: #535353;
+    z-index: 9999;
+    border: 0;
+    font-size: 18px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    font-family: 'magrabold';
+	width: 100%;
+    margin: 0px;
+    padding: 0px;
+	overflow-x: hidden;
+  }
+/*Navigation Bar Brand colour and font*/.navbar-brand{
+	color: #fff !important;
+	font-family: magrabold;
+	font-size: 40px;
+}
+/*Navigation Bar Brand when Hover*/.navbar-brand:hover{
+	color:#6495ED !important;
+}
+  /*Navigation Bar font colour*/.navbar li a, .navbar {
+    color: #fff !important;
+  }
+  /*Navigation Bar when Hover*/.navbar-nav li a:hover, .navbar-nav li.active a {
+    color:black !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  /*Footer's Glyphicon*/footer .glyphicon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #6495ED;
+  }
+
+   /*Media Screens of Size 768px*/@media screen and (max-width: 800px) {
+     /*Small Devices*/.col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+     /*Sign Up button when Media Screen of Size 768px*/.btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  /*Media Screens of Size 480px*/@media screen and (max-width: 500px) {
+    /*Size of Glyphicons when Media Screen is of Size 480px*/.logo {
+      font-size: 150px;
+    }
+  }
